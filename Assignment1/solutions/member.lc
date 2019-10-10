@@ -1,0 +1,12 @@
+let tail = \a.
+  tl a in
+
+let head = \b.
+  hd b in
+
+let rec member = \y. \x.
+  if y = (hd x) then S 0
+  else if (tl x) = # then 0
+  else member y (tl x) in
+
+member (a) (a:b:#)
