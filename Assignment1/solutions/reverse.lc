@@ -1,0 +1,11 @@
+let rec append =\x. \y.
+  if x = # then y
+  else (hd x): (append (tl x)y) in
+
+let rec reverse =\l.
+  if l = # then l
+  else append(reverse (tl l)) ((hd l):#) in
+
+
+//reverse #
+reverse a:b:c:#
