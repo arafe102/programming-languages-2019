@@ -1,0 +1,11 @@
+let tail = \a.
+  tl a in
+
+let head = \b.
+  hd b in
+
+let rec length = \x.
+  if (head x) = # then 0
+  else S (length (tail x)) in
+
+length S0:S0:S0:S0:S0:#
