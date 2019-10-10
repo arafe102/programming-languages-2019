@@ -1,0 +1,14 @@
+let rec le = \x.\y.
+  if x = 0 then S 0
+  else le(minus_one x) in
+
+let rec insert = \x.\y.
+  if y = # then x:y
+  else if le x (hd y) = S 0 then x:y
+  else (hd y):(insert(x)(tl y)) in
+
+let rec sort = \x.
+  if x = # then x
+  else insert(hd x)(sort(tl x)) in
+
+sort S S 0:S 0:#
