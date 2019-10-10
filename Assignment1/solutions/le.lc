@@ -1,0 +1,7 @@
+let rec le  = \x. \y.
+  if x=0 then 0
+  else if x=y then S 0
+  else le (minus_one x)  in
+
+//le S S 0 S 0
+le S 0 S 0
