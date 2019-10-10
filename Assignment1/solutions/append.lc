@@ -1,0 +1,8 @@
+let rec append = \x.
+  if (hd x) = # then y
+  else hd x:(append (tl x) y) in
+
+//append # #
+//append 0:S 0:# #
+//append # a:b:#
+append 0:S 0:# a:b:#
