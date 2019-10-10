@@ -1,0 +1,7 @@
+let rec even =\x.
+  if x = # then S 0
+  else if (tl x) = # then 0
+  else even (tl (tl x)) in
+
+even a1:a2:a3:a4:#
+//even a1:a2:a3:a4:a5:#
